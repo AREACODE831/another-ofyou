@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rozha+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Charmonman:wght@400;700&family=Chathura:wght@400;700&family=Just+Me+Again+Down+Here&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Pinyon+Script&family=WindSong&display=swap");
+
+body {
+  background-color: #e4eef2;
+  text-align: left;
+}
+
+h2 {
+  /*   font-family: 'Charmonman', cursive; */
+  /*   font-family: 'Pinyon Script', cursive; */
+  font-family: "WindSong", cursive;
+  font-size: 45px;
+}
+p {
+  font-family: "Just Me Again Down Here", cursive;
+  font-size: 30px;
+}
+.shake {
+  margin-left: 150px;
+  animation: myAnim 2s ease 1s infinite normal forwards;
+}
+
+@keyframes myAnim {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: translateX(10px);
+  }
+
+  80% {
+    transform: translateX(8px);
+  }
+
+  90% {
+    transform: translateX(-8px);
+  }
+}
+.collectionname {
+  color: #FFFFFF;
+
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #d9c043,
+    0 0 30px #d9c043, 0 0 40px #d9c043, 0 0 55px #d9c043, 0 0 75px #d9c043;
+  color: #FFFFFF;
+}
+.title {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+.name {
+  font-family: "Oswald", sans-serif;
+}
+.name2 {
+  font-family: "Oswald", sans-serif;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+.blink_text {
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes blin {
+  50% {
+    opacity: 0;
+  }
+}
+
+.topnav {
+  background-color: #e4eef2;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  /*   font-family: "Rozha One", serif; */
+  font-family: "Oswald", sans-serif;
+}
+
+.topnav a:hover {
+  background-color: #d9c043;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #d9c043;
+  color: black;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 180%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.9;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.container:hover .far {
+  opacity: 1;
+}
+
+.text {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 2px 10px;
+}
+
+.far {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text1 {
+  background-color: #eaaa0b;
+  color: black;
+  font-size: 16px;
+  padding: 2px 10px;
+}
+
+.bg {
+  background: linear-gradient(294deg, #009cff, #000000);
+  background-size: 400% 400%;
+
+  -webkit-animation: bg 25s ease infinite;
+  -moz-animation: bg 25s ease infinite;
+  animation: bg 25s ease infinite;
+}
+
+@-webkit-keyframes bg {
+  0% {
+    background-position: 24% 0%;
+  }
+  50% {
+    background-position: 77% 100%;
+  }
+  100% {
+    background-position: 24% 0%;
+  }
+}
+@-moz-keyframes bg {
+  0% {
+    background-position: 24% 0%;
+  }
+  50% {
+    background-position: 77% 100%;
+  }
+  100% {
+    background-position: 24% 0%;
+  }
+}
+@keyframes bg {
+  0% {
+    background-position: 24% 0%;
+  }
+  50% {
+    background-position: 77% 100%;
+  }
+  100% {
+    background-position: 24% 0%;
+  }
+}
+
+.button {
+  background-color: #8db368;
+  font-family: "Oswald", sans-serif;
+  border-radius: 12px;
+  font-size: 18px;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+.artst {
+  font-family: "Just Me Again Down Here", cursive;
+  font-size: 30px;
+  margin-left: 90px;
+  margin-right: 90px;
+  border: 3px solid #D9C043;
+}
